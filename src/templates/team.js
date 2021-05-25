@@ -6,6 +6,11 @@ const Team = ({ data }) => {
     <div>
       <h1>{data.team.teamInfo.name}</h1>
       <p>{data.team.teamInfo.sport}</p>
+      <div>
+        {data.team.coaches.map(coach => (
+          <p>{coach}</p>
+        ))}
+      </div>
     </div>
   )
 }
